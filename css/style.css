@@ -61,7 +61,7 @@ button, a {
 .cabecalho_princ_itens{
     padding: 0;
 }
-fieldset{
+.pesquisa_div fieldset{
     
     border-style: none;
     display: flex;
