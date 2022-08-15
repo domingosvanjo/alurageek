@@ -48,10 +48,10 @@ button, a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 0px;
-    gap: 20px;
     
-    width: 1136px;
+    gap: 20px;
+    max-width: 1136px;
+    width: 86%;
     height: 115px;
     background: #FFFFFF;
     flex: none;
@@ -70,7 +70,7 @@ button, a {
     padding: 8px 16px;
     gap: 8px;
     justify-content: space-between;
-    width: 393px;
+    width: auto;
     height: 40px;
     background: #F5F5F5;
     border-radius: 20px;
@@ -80,6 +80,7 @@ button, a {
 }
 
 .pesquisa_div{
+    width: auto;
     display: flex;
     flex: 1 1 auto;
     position: relative;
@@ -146,7 +147,9 @@ button, a {
     font-size: 16px;
     line-height: 19px;
     color: var(--cor-de-link);
-    
+}
+.login_buton:hover{
+    background: #D4E4FA;
 }
 .banner_div{
     display: flex;
@@ -162,6 +165,7 @@ button, a {
     order: 1;
     align-self: stretch;
     flex-grow: 0;
+    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../assets/banner.png); */
 }
 .banner_img{
     width: 100%;
@@ -174,9 +178,9 @@ button, a {
     justify-content: flex-end;
     align-items: flex-start;
     
-    top: 22rem;
+    top: 22.1rem;
     
-    width: 1136px;
+    width: 86%;
     height: 170px;
     
     flex: none;
@@ -187,7 +191,7 @@ button, a {
     margin: 0;
     font-style: normal;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.7rem;
     line-height: 61px;
     
     color: #FFFFFF;
@@ -196,7 +200,7 @@ button, a {
 .text_banner_subTit{
     font-style: normal;
     font-weight: 700;
-    font-size: 1.29rem;
+    font-size: 1.58rem;
     line-height: 26px;
     
     color: #FFFFFF;
@@ -221,7 +225,9 @@ button, a {
     line-height: 19px;
     color: #FFFFFF;
 }
-
+.button_btn:hover{
+    background: #5595E9;
+}
 section.all_sections{
     display: flex;
     flex-direction: column;
@@ -310,4 +316,23 @@ li h4, li p{
 }
 section.consoles, section.diversos{
     padding-top: 46px;
+}
+
+@media(max-width: 768px){
+    .products_box:nth-child(6){
+        display: none;
+    }
+    .products_box:nth-child(5){
+        display: none;
+    }
+    .container{
+        width: auto;
+    }
+    .pesquisa_campo{
+        width: auto;
+    }
+    .banner_div{
+        /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),url(../assets/banner.png); */
+
+    }
 }

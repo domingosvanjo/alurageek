@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar produtos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Projeto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/add_prod.css">
+    <link rel="icon" href="assets/Vector.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho_princ">
+        <div class="container">
+            <ul class="cabecalho_princ_itens">
+                <li>
+                    <a class="cabecalho_princ_itens_link" href="#">
+                        <img src="assets/Logo.png" alt="Logo da AluraGeek">
+                    </a>
+                </li>
+            </ul>
+            <div class="pesquisa_div">
+                <fieldset aria-hidden="true">
+                    <input class="pesquisa_campo" type="search" name="pesquisa_campo" id="pesq" placeholder="O que deseja encontrar?">
+            
+                    <div class="lupa_append_icon">
+                        <button type="button"  class="lupa_append_icon_icon"><img src="assets/lupa.png"></button>
+                    </div>
+                </fieldset> 
+            </div>
+            <span class="adm_span"><a href="#"><button class="adm_btn">Menu administrador</button></a></span>
+        </div>
+    </header>
+    <form class="add_prod_form">
+        
+        <div class="add_prod_div">
+            <p class="add_prod_tit">Adicional novo produto</p>
+            <fieldset class="add_prod_fild">
+                <label for="img" class="add_prod_label">URL da imagem</label>
+                <input class="add_prod_campo" type="text" name="url" id="img">
+            </fieldset>
+            <fieldset class="add_prod_fild">
+                <label for="cat" class="add_prod_label">Categoria</label>
+                <input class="add_prod_campo" type="text" name="cat" id="cat">
+            </fieldset> 
+            <fieldset class="add_prod_fild">
+                <label for="nprod" class="add_prod_label">Nome do produto</label>
+                <input class="add_prod_campo" type="text" name="nprod" id="nprod">
+            </fieldset>
+            <fieldset class="add_prod_fild">
+                <label for="preco" class="add_prod_label">Preço do produto</label>
+                <input class="add_prod_campo" type="text" name="cat" id="cat">
+            </fieldset> 
+            <fieldset class="add_prod_fild">
+                <label for="desc" class="add_prod_label">Descrição do produto</label>
+                <input class="add_prod_campo" type="text" name="desc" id="desc">
+            </fieldset> 
+            <button class="add_btn">Adicionar produto</button>
+        </div>
+    </form>
+
+    <footer class="rodape_princ">
+        <div class="rodape_princ1">
+            <div class="rodape_sec1">
+                <ul class="rodape_sec1_logo">
+                    <li>
+                        <a class="rodape_sec1_logo_link" href="#">
+                            <img src="assets/Logo.png" alt="Logo da AluraGeek">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="rodape_sec1_link">
+                    <li><a class="rodape_sec1_link_link" href="#">Quem somos nós</a></li>
+                    <li><a class="rodape_sec1_link_link" href="#">Política de privacidade</a></li>
+                    <li><a class="rodape_sec1_link_link" href="#">Programa fidelidade</a></li>
+                    <li><a class="rodape_sec1_link_link" href="#">Nossas lojas</a></li>
+                    <li><a class="rodape_sec1_link_link" href="#">Quero ser franqueado</a></li>
+                    <li><a class="rodape_sec1_link_link" href="#">Anuncie aqui</a></li>
+                </ul>
+                <form class="fale_conosco">
+                    <label class="fale_conosco_label">Fale conosco</label>
+                    <div class="fale_conosco_div">
+                        <fieldset class="fale_conosco_fild">
+                            <label for="nome" class="fale_conosco_nome">Nome</label>
+                            <input class="fale_conosco_nome_campo" type="text" name="name" id="nome">
+                        </fieldset>
+                        <fieldset class="fale_conosco_fild_msg">
+                            <label for="msg" class="fale_conosco_msg">Escreva sua mensagem</label>
+                            <input class="fale_conosco_msg_campo" type="text" name="message" id="msg">
+                        </fieldset> 
+                        <span class="buton_env_span"><a href="#"><button class="env_btn">Enviar mensagem</button></a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="rodape_sec">
+            <p>Desenvolvido por Domingos Vanjo</p>
+            <p>2022</p>
+        </div>
+    </footer>
+</body>
+</html>

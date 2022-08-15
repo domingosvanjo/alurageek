@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="icon" href="assets/Vector.png" type="image/x-icon">
-
+    <title>Produtos</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Fonte do Projeto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="icon" href="assets/Vector.png" type="image/x-icon">
 </head>
 <body>
     <header class="cabecalho_princ">
@@ -34,31 +35,21 @@
                     </div>
                 </fieldset> 
             </div>
-            <span class="login_span"><a href="login.html"><button class="login_buton">Login</button></a></span>
-        </div>
-        <div class="banner_div">
-            <img class="banner_img" src="assets/banner.png">
-        </div>
-        <div class="text_banner">
-            <p class="text_banner_tit">Dezembro promocional</p>
-            <p class="text_banner_subTit">Produtos selecionados com 33% de desconto</p>
-            <span class="buton_console_span"><a href="#console"><button class="button_btn">Ver console</button></a></span>
         </div>
     </header>
-    
     <!-- Sessão Star Wars -->
     <section class="starWars all_sections">
         <div class="title">
-            <h2 class="title_tit" id="starWars">Star Wars</h2>
-            <a class="link" href="#">Ver tudo<img src="assets/seta.png"> </a>
+            <h2 class="title_tit" id="starWars">Todos os produtos</h2>
+            <span class="buton_add_prod_span"><a href="add_prod.html"><button class="add_prod_btn">Adicionar produto</button></a></span>
         </div>
         <div class="products">
             <div class="products_box">
                 <ul class="products_list">
-                    <li class="products_item"><img src="assets/fig1.png"></li>
-                    <li class="products_item"><h4>Produto XYZ</h4></li>
-                    <li class="products_item"><p>R$ 60,00</p></li>
-                    <li class="products_item"><a href="#">Ver produto</a></li>
+                    <li class="products_item_img"><img src="assets/fig1.png"></li>
+                    <li class="products_item_title"><h4>Produto XYZ</h4></li>
+                    <li class="products_item_preco"><p>R$ 60,00</p></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -66,7 +57,7 @@
                     <li class="products_item_img"><img src="assets/fig2.png"></li>
                     <li class="products_item_title"><h4>Produto XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -74,7 +65,7 @@
                     <li class="products_item_img"><img src="assets/fig3.png"></li>
                     <li class="products_item_title"><h4>Produto XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -82,7 +73,7 @@
                     <li class="products_item_img"><img src="assets/fig4.png"></li>
                     <li class="products_item_title"><h4>Produto XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -90,7 +81,7 @@
                     <li class="products_item_img"><img src="assets/fig5.png"></li>
                     <li class="products_item_title"><h4>Produto XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -98,7 +89,7 @@
                     <li class="products_item_img"><img src="assets/fig6.png"></li>
                     <li class="products_item_title"><h4>Produto XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
         </div>
@@ -106,17 +97,14 @@
 
     <!-- Sessão consoles -->
     <section class="consoles all_sections">
-        <div class="title">
-            <h2 class="title_tit" id="consoles">Consoles</h2>
-            <a class="link" href="#">Ver tudo<img src="assets/seta.png"> </a>
-        </div>
+        
         <div class="products">
             <div class="products_box">
                 <ul class="products_list">
                     <li class="products_item_img"><img src="assets/cons1.png"></li>
                     <li class="products_item_title"><h4>Controle XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -124,7 +112,7 @@
                     <li class="products_item_img"><img src="assets/cons2.png"></li>
                     <li class="products_item_title"><h4>Controle e console XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -132,7 +120,7 @@
                     <li class="products_item_img"><img src="assets/cons3.png"></li>
                     <li class="products_item_title"><h4>Controle XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -140,7 +128,7 @@
                     <li class="products_item_img"><img src="assets/cons4.png"></li>
                     <li class="products_item_title"><h4>Controle XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -148,7 +136,7 @@
                     <li class="products_item_img"><img src="assets/cons5.png"></li>
                     <li class="products_item_title"><h4>Controle XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -156,7 +144,7 @@
                     <li class="products_item_img"><img src="assets/cons6.png"></li>
                     <li class="products_item_title"><h4>Game Body Color XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
         </div>
@@ -164,17 +152,14 @@
 
     <!-- Sessão diversos -->
     <section class="diversos all_sections">
-        <div class="title">
-            <h2 class="title_tit" id="diversos">Diversos</h2>
-            <a class="link" href="#">Ver tudo<img src="assets/seta.png"> </a>
-        </div>
+        
         <div class="products">
             <div class="products_box">
                 <ul class="products_list">
                     <li class="products_item_img"><img src="assets/diver1.png"></li>
                     <li class="products_item_title"><h4>Camisa Atari XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -182,7 +167,7 @@
                     <li class="products_item_img"><img src="assets/diver2.png"></li>
                     <li class="products_item_title"><h4>Camisa SNES XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -190,7 +175,7 @@
                     <li class="products_item_img"><img src="assets/diver3.png"></li>
                     <li class="products_item_title"><h4>Boneco Sonic XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -198,7 +183,7 @@
                     <li class="products_item_img"><img src="assets/diver4.png"></li>
                     <li class="products_item_title"><h4>Controle e console XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -206,7 +191,7 @@
                     <li class="products_item_img"><img src="assets/diver5.png"></li>
                     <li class="products_item_title"><h4>Controle e console XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -214,7 +199,7 @@
                     <li class="products_item_img"><img src="assets/diver6.png"></li>
                     <li class="products_item_title"><h4>Controle e console XYZ</h4></li>
                     <li class="products_item_preco"><p>R$ 60,00</p></li>
-                    <li class="products_item_link"><a href="#">Ver produto</a></li>
+                    <li class="products_item_link"><a href="#">#1111111</a></li>
                 </ul>
             </div>
         </div>
