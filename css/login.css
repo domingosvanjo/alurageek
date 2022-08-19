@@ -30,9 +30,10 @@ section.login{
     height: 63.13px;
     background: #FFFFFF;
     border-radius: 4px;
+    outline: none;
     border-style: none;
     border-bottom: 2px solid #C8C8C8;
-    outline: none;
+    
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -61,4 +62,28 @@ section.login{
 }
 .login button:hover{
     background: #5595E9;
+}
+
+@media(max-width: 360px){
+    section.login{
+        padding: 13% 0% 25% 0%;
+    }
+    .pesquisa_div{
+        flex: none;
+    }
+    .container{
+        width: 100%;
+    }
+    .cabecalho_princ_itens_link img{
+        width: 80%;
+    }
+    .login input{
+        width: 90%;
+    }
+    .login button{
+        padding: 12px 31px;
+        width: auto;
+        height: auto;
+        font-weight: 100;
+    }
 }

@@ -123,6 +123,9 @@ button, a {
     height: auto;
     background: #F5F5F5;
 }
+.img_lupa_mobile{
+    display: none;
+}
 
 .login_buton{
     box-sizing: border-box;
@@ -165,7 +168,6 @@ button, a {
     order: 1;
     align-self: stretch;
     flex-grow: 0;
-    /* background: linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%), url(../assets/banner.png); */
 }
 .banner_img{
     width: 100%;
@@ -178,7 +180,7 @@ button, a {
     justify-content: flex-end;
     align-items: flex-start;
     
-    top: 22.1rem;
+    top: 18rem;
     
     width: 86%;
     height: 170px;
@@ -191,7 +193,7 @@ button, a {
     margin: 0;
     font-style: normal;
     font-weight: 700;
-    font-size: 3.7rem;
+    font-size: 3.3rem;
     line-height: 61px;
     
     color: #FFFFFF;
@@ -200,7 +202,7 @@ button, a {
 .text_banner_subTit{
     font-style: normal;
     font-weight: 700;
-    font-size: 1.58rem;
+    font-size: 1.48rem;
     line-height: 26px;
     
     color: #FFFFFF;
@@ -232,7 +234,7 @@ section.all_sections{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 132px;
+    padding-top: 50px;
     gap: 16px;
     
     width: auto;
@@ -247,9 +249,9 @@ section.all_sections{
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 871px;
-    
-    width: 1133px;
+    gap: 20px;
+    max-width: 1136px;
+    width: 86%;
     height: 38px;
     flex: none;
     order: 0;
@@ -276,8 +278,8 @@ section.all_sections{
     align-items: flex-start;
     padding: 0px;
     gap: 16px;
-    
-    width: 1136px;
+    max-width: 1136%;
+    width: 86%;
     height: auto;
     flex: none;
     order: 1;
@@ -304,15 +306,25 @@ section.all_sections{
     padding: 0px;
     gap: 8px;
     
-    width: 176px;
-    height: 174px;
-    background: #FFFFFF;
+    width: 150%;
+    height: auto;
+    /* background: #FFFFFF; */
     flex: none;
     order: 0;
     flex-grow: 0;
 }
-li h4, li p{
+.products_item_img img{
+    width: 65%;
+}
+li h4{
     margin: 0;
+    font-weight: normal;
+    font-size: 0.7rem;
+}
+li p{
+    margin: 0;
+    font-weight: bold;
+    
 }
 section.consoles, section.diversos{
     padding-top: 46px;
@@ -326,13 +338,86 @@ section.consoles, section.diversos{
         display: none;
     }
     .container{
+        height: auto;
+    }
+    
+    
+    .cabecalho_princ_itens li{
         width: auto;
+        height: auto;
+    }
+    .cabecalho_princ_itens_link img{
+        width: 100%;
     }
     .pesquisa_campo{
         width: auto;
     }
     .banner_div{
-        /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, rgba(0, 0, 0, 0) 41.15%, rgba(0, 0, 0, 0.8) 100%),url(../assets/banner.png); */
+        height: 65%;
+    }
+    .text_banner{
+        top: 24%;
+    }
+}
 
+@media(max-width: 360px){
+    .cabecalho_princ{
+        height: 15rem;
+    }
+    .container{
+        height: auto;
+    }
+    .pesquisa_div{
+        order: 2;
+    }
+    .pesquisa_div fieldset{
+        display: none;
+    }
+    .img_lupa_mobile{
+        display: inline;
+    }
+    .cabecalho_princ_itens li{
+        width: auto;
+        height: auto;
+    }
+    .cabecalho_princ_itens_link img{
+        width: 100%;
+    }
+    .lupa_append_icon_icon {
+        background-color: transparent;
+    }
+    .login_buton{
+        width: 9rem;
+        height: 2.3rem;
+    }
+    .text_banner{
+        top: 2.2rem;
+    }
+    .text_banner_tit{
+        font-size: 128%;
+        line-height: 1;
+    }
+    .text_banner_subTit{
+        font-weight: 200;
+        font-size: 81%;
+        line-height: 0;
+    }
+    .button_btn{
+        padding: 8px;
+        width: auto;
+        height: auto;
+        font-size: 82%;
+    }
+    section.all_sections{
+        padding-top: 0;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .products{
+        flex-wrap: wrap;
+    }
+    .products_box{
+        width: calc(47%);
     }
 }

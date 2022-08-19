@@ -32,7 +32,10 @@
                     <div class="lupa_append_icon">
                         <button type="button"  class="lupa_append_icon_icon"><img src="assets/lupa.png"></button>
                     </div>
-                </fieldset> 
+                </fieldset>
+                <div class="lupa_append_icon img_lupa_mobile">
+                    <button type="button"  class="lupa_append_icon_icon"><img src="assets/lupa.png"></button>
+                </div>
             </div>
             <span class="login_span"><a href="login.html"><button class="login_buton">Login</button></a></span>
         </div>
@@ -42,7 +45,7 @@
         <div class="text_banner">
             <p class="text_banner_tit">Dezembro promocional</p>
             <p class="text_banner_subTit">Produtos selecionados com 33% de desconto</p>
-            <span class="buton_console_span"><a href="#console"><button class="button_btn">Ver console</button></a></span>
+            <span class="buton_console_span"><a href="#console"><button class="button_btn">Ver consoles</button></a></span>
         </div>
     </header>
     
@@ -55,10 +58,10 @@
         <div class="products">
             <div class="products_box">
                 <ul class="products_list">
-                    <li class="products_item"><img src="assets/fig1.png"></li>
-                    <li class="products_item"><h4>Produto XYZ</h4></li>
-                    <li class="products_item"><p>R$ 60,00</p></li>
-                    <li class="products_item"><a href="#">Ver produto</a></li>
+                    <li class="products_item_img"><img src="assets/fig1.png"></li>
+                    <li class="products_item_title"><h4>Produto XYZ</h4></li>
+                    <li class="products_item_preco"><p>R$ 60,00</p></li>
+                    <li class="products_item_link"><a href="#">Ver produto</a></li>
                 </ul>
             </div>
             <div class="products_box">
@@ -222,21 +225,23 @@
     <footer class="rodape_princ">
         <div class="rodape_princ1">
             <div class="rodape_sec1">
-                <ul class="rodape_sec1_logo">
-                    <li>
-                        <a class="rodape_sec1_logo_link" href="#">
-                            <img src="assets/Logo.png" alt="Logo da AluraGeek">
-                        </a>
-                    </li>
-                </ul>
-                <ul class="rodape_sec1_link">
-                    <li><a class="rodape_sec1_link_link" href="#">Quem somos nós</a></li>
-                    <li><a class="rodape_sec1_link_link" href="#">Política de privacidade</a></li>
-                    <li><a class="rodape_sec1_link_link" href="#">Programa fidelidade</a></li>
-                    <li><a class="rodape_sec1_link_link" href="#">Nossas lojas</a></li>
-                    <li><a class="rodape_sec1_link_link" href="#">Quero ser franqueado</a></li>
-                    <li><a class="rodape_sec1_link_link" href="#">Anuncie aqui</a></li>
-                </ul>
+                <div class="rodape_sec1_direita">
+                    <ul class="rodape_sec1_logo">
+                        <li>
+                            <a class="rodape_sec1_logo_link" href="#">
+                                <img src="assets/Logo.png" alt="Logo da AluraGeek">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="rodape_sec1_link">
+                        <li><a class="rodape_sec1_link_link" href="#">Quem somos nós</a></li>
+                        <li><a class="rodape_sec1_link_link" href="#">Política de privacidade</a></li>
+                        <li><a class="rodape_sec1_link_link" href="#">Programa fidelidade</a></li>
+                        <li><a class="rodape_sec1_link_link" href="#">Nossas lojas</a></li>
+                        <li><a class="rodape_sec1_link_link" href="#">Quero ser franqueado</a></li>
+                        <li><a class="rodape_sec1_link_link" href="#">Anuncie aqui</a></li>
+                    </ul>
+                </div>
                 <form class="fale_conosco">
                     <label class="fale_conosco_label">Fale conosco</label>
                     <div class="fale_conosco_div">
@@ -244,7 +249,7 @@
                             <label for="nome" class="fale_conosco_nome">Nome</label>
                             <input class="fale_conosco_nome_campo" type="text" name="name" id="nome">
                         </fieldset>
-                        <fieldset class="fale_conosco_fild_msg">
+                        <fieldset class="fale_conosco_fild">
                             <label for="msg" class="fale_conosco_msg">Escreva sua mensagem</label>
                             <input class="fale_conosco_msg_campo" type="text" name="message" id="msg">
                         </fieldset> 

@@ -1,6 +1,3 @@
-.title{
-    gap: 692px;
-}
 
 .add_prod_btn{
     display: flex;
@@ -27,4 +24,16 @@
 }
 .add_prod_btn:hover{
     background: #5595E9;
+}
+
+@media(max-width: 360px){
+
+    section.all_sections{
+        gap: 95px;
+    }
+    .title{
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
 }
